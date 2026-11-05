@@ -1,20 +1,20 @@
 # Hindu Yuva Chetna Mahasabha (HYCM)
 
-Hindu Yuva Chetna Mahasabha (HYCM) is a youth/community organisation presenting its activities, events, membership and news to visitors and members.
+Hindu Yuva Chetna Mahasabha runs a small community and youth site. It has activity and news pages, a membership area plus an icon-driven donation route.
 
 ## Live Demo
 
-Not deployed publicly. Run locally with:
+Not deployed publicly. Start locally:
 
 ```bash
-python3 -m http.server <port> --directory .
+cd hycm
+python3 -m http.server 8103 --directory .
+# open http://localhost:8103/
 ```
-
-See [Installation and Setup](#installation-and-setup).
 
 ## Screenshots
 
-Real captured screenshots of the running site (desktop 1440x900, mobile 390x844). Relative paths — file names include the project slug so every repository is unique:
+The site shown below was running during capture. Relative paths, file names carry the project slug:
 
 | Desktop | Mobile |
 |---|---|
@@ -22,66 +22,66 @@ Real captured screenshots of the running site (desktop 1440x900, mobile 390x844)
 
 ## About the Project
 
-Hindu Yuva Chetna Mahasabha (HYCM) is a youth/community organisation presenting its activities, events, membership and news to visitors and members.
+Hindu Yuva Chetna Mahasabha is a youth and community organisation. The site publishes its activities, news and membership details, with a donation link.
 
 ## Key Features
 
- - Homepage, About, Activities, Membership, Gallery, News, Team, Contact, Donate pages
- - Membership application flow
- - News and event content pages
- - Contact / email form (email.php)
- - Donate page
 
+ - Homepage, About, Activities, News, Membership, Donate pages
+ - News and event gallery with photographs
+ - Membership and volunteer pages
+ - Contact form and email route
 
 ## Technology Stack
 
-HTML, CSS, JavaScript; PHP (email.php); static site
+
+HTML, CSS, JavaScript; PHP (email.php)
 
 ## Project Structure
 
- - `.`
- - `.vscode`
- - `screenshots/desktop`
- - `screenshots/mobile`
 
+ - index, about, activities, news, membership, donate, gallery, contact, team + css, images, js, email.php
 
 ## Installation and Setup
 
-python3 -m http.server 8103
 
 ```bash
+
 cd hycm
-python3 -m http.server <port>
-# open http://localhost:<port>
+
+python3 -m http.server 8103 --directory .
+
+# open http://localhost:8103/
+
 ```
 
-## Environment Configuration
-
-No environment variables are required for this static site. There are no `.env` files or secrets in the project.
 
 ## My Contribution
 
-The original website was authored by its owner (as identified in the source), not by me. I prepared this repository for professional GitHub publication: I verified the source files, captured real screenshots, and generated the documentation. I did not rewrite the site's functionality or design.
+
+The site belongs to the organisation's office-bearers, and the owner carried out the build. I only handled preparation on this copy: verifying files, capturing screenshots and writing the documentation. Nothing was changed in the original.
 
 ## Responsive Design
 
-Pages verified at 1440x900 (desktop) and 390x844 (mobile).
+
+Homepage and inner pages were captured at 1440x900 (desktop) and 390x844 (mobile) earlier this session.
 
 ## Security and Privacy
 
-Security audit performed during preparation. No API keys, tokens, private keys, database credentials, or SMTP credentials were found. Personal contact information present in the site (phone numbers, emails) is displayed on the live site and should not be republished beyond the repository.
+
+No API keys, tokens, private keys, database credentials, or SMTP credentials were found anywhere in the repository. Public contact details that sit on the live site belong to the organisation or its people and are not something to republish beyond the repo.
 
 ## Known Limitations
 
-- The site is a static site and is not deployed online; it must be served locally.
-- Some pages reference local assets and third-party fonts/CDN resources.
+
+- The site is a static site and is not deployed online; it is served here for review.
 
 ## Future Improvements
 
-- Deploy the site to a public host and add a real Live Demo link.
-- Add a managed content backend (CMS) if content changes frequently.
-- Optimise large images for faster page load.
+
+- Serve the site from a public host and swap in a live demo link when one becomes available.
 
 ## License
 
-No license is present in the source code. The source code is therefore **not licensed for reuse**. Contact the project owner before reuse.
+
+No license was found in the source, so the code is not offered for reuse. Speak to the project owner before reusing it.
