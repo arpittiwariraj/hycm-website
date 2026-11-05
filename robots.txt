@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://synatse.rf.gd/sitemap.xml
